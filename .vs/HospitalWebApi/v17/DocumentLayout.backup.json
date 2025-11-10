@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP\\HospitalWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|d:\\asp\\hospitalwebapi\\hospitalwebapi\\controllers\\typecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|solutionrelative:hospitalwebapi\\controllers\\typecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|d:\\asp\\hospitalwebapi\\hospitalwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|solutionrelative:hospitalwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|d:\\asp\\hospitalwebapi\\hospitalwebapi\\services\\itypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|solutionrelative:hospitalwebapi\\services\\itypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|d:\\asp\\hospitalwebapi\\hospitalwebapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|solutionrelative:hospitalwebapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|d:\\asp\\hospitalwebapi\\hospitalwebapi\\dtos\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|solutionrelative:hospitalwebapi\\dtos\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|d:\\asp\\hospitalwebapi\\hospitalwebapi\\dtos\\typedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|solutionrelative:hospitalwebapi\\dtos\\typedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|d:\\asp\\hospitalwebapi\\hospitalwebapi\\models\\type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|solutionrelative:hospitalwebapi\\models\\type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|d:\\asp\\hospitalwebapi\\hospitalwebapi\\models\\hospitalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7FA5C19-E428-4747-A202-0987663FECE4}|HospitalWebApi\\HospitalWebApi.csproj|solutionrelative:hospitalwebapi\\models\\hospitalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "HospitalWebApi\\Program.cs",
+              "ToolTip": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Program.cs",
+              "RelativeToolTip": "HospitalWebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:34:02.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\DTOs\\PagedResult.cs",
+              "RelativeDocumentMoniker": "HospitalWebApi\\DTOs\\PagedResult.cs",
+              "ToolTip": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\DTOs\\PagedResult.cs",
+              "RelativeToolTip": "HospitalWebApi\\DTOs\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:29:18.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Type.cs",
+              "DocumentMoniker": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Models\\Type.cs",
+              "RelativeDocumentMoniker": "HospitalWebApi\\Models\\Type.cs",
+              "ToolTip": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Models\\Type.cs",
+              "RelativeToolTip": "HospitalWebApi\\Models\\Type.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:19:23.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TypeDto.cs",
+              "DocumentMoniker": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\DTOs\\TypeDto.cs",
+              "RelativeDocumentMoniker": "HospitalWebApi\\DTOs\\TypeDto.cs",
+              "ToolTip": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\DTOs\\TypeDto.cs",
+              "RelativeToolTip": "HospitalWebApi\\DTOs\\TypeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:19:47.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HospitalContext.cs",
+              "DocumentMoniker": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Models\\HospitalContext.cs",
+              "RelativeDocumentMoniker": "HospitalWebApi\\Models\\HospitalContext.cs",
+              "ToolTip": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Models\\HospitalContext.cs",
+              "RelativeToolTip": "HospitalWebApi\\Models\\HospitalContext.cs",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAswOsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T08:25:31.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "HospitalWebApi\\Mapping\\MappingProfile.cs",
+              "ToolTip": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "HospitalWebApi\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T08:24:43.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TypeController.cs",
+              "DocumentMoniker": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Controllers\\TypeController.cs",
+              "RelativeDocumentMoniker": "HospitalWebApi\\Controllers\\TypeController.cs",
+              "ToolTip": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Controllers\\TypeController.cs",
+              "RelativeToolTip": "HospitalWebApi\\Controllers\\TypeController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:20:28.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITypeService.cs",
+              "DocumentMoniker": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Services\\ITypeService.cs",
+              "RelativeDocumentMoniker": "HospitalWebApi\\Services\\ITypeService.cs",
+              "ToolTip": "D:\\ASP\\HospitalWebApi\\HospitalWebApi\\Services\\ITypeService.cs",
+              "RelativeToolTip": "HospitalWebApi\\Services\\ITypeService.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAwwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:20:48.53Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
