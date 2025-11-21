@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace HospitalWebApi.Models;
 
@@ -34,6 +35,10 @@ public partial class HospitalContext : DbContext
     public virtual DbSet<Type> Types { get; set; }
     public virtual DbSet<User> Users { get; set; }
     public virtual DbSet<Role> Roles { get; set; }
+
+    public virtual DbSet<Appointment> Appointments { get; set; }
+    public DbSet<Visit> Visits { get; set; }
+
 
 
 

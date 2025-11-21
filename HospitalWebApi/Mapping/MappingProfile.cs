@@ -55,6 +55,15 @@ namespace HospitalWebApi.Mapping
             CreateMap<ServiceReceipt, ServiceReceiptDto>().ReverseMap();
             CreateMap<BillReceipt, BillReceiptDto>().ReverseMap();
             CreateMap<Outsource, OutsourceDto>().ReverseMap();
+
+            CreateMap<Appointment, AppointmentDto>()
+     .ForMember(dest => dest.PatientName, opt => opt.MapFrom(src => src.Patient.PatientName))
+     .ForMember(dest => dest.DoctorName, opt => opt.MapFrom(src => src.Doctor.DoctorName))
+     .ReverseMap();
+
+
+            CreateMap<Visit, VisitDto>().ReverseMap();
+
         }
     }
 }

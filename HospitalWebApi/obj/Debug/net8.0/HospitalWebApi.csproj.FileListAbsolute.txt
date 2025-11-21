@@ -172,3 +172,4 @@ D:\ASP\HospitalWebApi\HospitalWebApi\obj\Debug\net8.0\refint\HospitalWebApi.dll
 D:\ASP\HospitalWebApi\HospitalWebApi\obj\Debug\net8.0\HospitalWebApi.pdb
 D:\ASP\HospitalWebApi\HospitalWebApi\obj\Debug\net8.0\HospitalWebApi.genruntimeconfig.cache
 D:\ASP\HospitalWebApi\HospitalWebApi\obj\Debug\net8.0\ref\HospitalWebApi.dll
+D:\ASP\HospitalWebApi\HospitalWebApi\obj\Debug\net8.0\HospitalWebApi.sourcelink.json

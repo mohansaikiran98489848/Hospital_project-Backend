@@ -31,41 +31,103 @@ public class AuthService : IAuthService
         return BitConverter.ToString(bytes).Replace("-", "").ToLowerInvariant();
     }
 
-    public async Task<string?> LoginAsync(LoginDto dto)
-    {
-        if (string.IsNullOrWhiteSpace(dto.Username) || string.IsNullOrWhiteSpace(dto.Password))
-            return null;
+    /* public async Task<string?> LoginAsync(LoginDto dto)
+     {
+         if (string.IsNullOrWhiteSpace(dto.Username) || string.IsNullOrWhiteSpace(dto.Password))
+             return null;
 
-        var user = await _context.Users
-            .Include(u => u.Role)
-            .FirstOrDefaultAsync(u => u.Username == dto.Username);
+         var user = await _context.Users
+             .Include(u => u.Role)
+             .FirstOrDefaultAsync(u => u.Username == dto.Username);
 
-        if (user == null)
-            return null;
+         if (user == null)
+             return null;
 
-        var hashedInput = HashPassword(dto.Password);
-        if (hashedInput != user.PasswordHash)
-            return null;
+         var hashedInput = HashPassword(dto.Password);
+         if (hashedInput != user.PasswordHash)
+             return null;
 
-     
-        var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes(_authSettings.SecretKey);
 
-        var tokenDescriptor = new SecurityTokenDescriptor
-        {
-            Subject = new ClaimsIdentity(new[]
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
-                new Claim(ClaimTypes.Name, user.Username),
-                new Claim(ClaimTypes.Role, user.Role.RoleName)
-            }),
-            Expires = DateTime.UtcNow.AddHours(1),
-            SigningCredentials = new SigningCredentials(
-                new SymmetricSecurityKey(key),
-                SecurityAlgorithms.HmacSha256Signature)
-        };
+         var tokenHandler = new JwtSecurityTokenHandler();
+         var key = Encoding.ASCII.GetBytes(_authSettings.SecretKey);
 
-        var token = tokenHandler.CreateToken(tokenDescriptor);
-        return tokenHandler.WriteToken(token);
+         var tokenDescriptor = new SecurityTokenDescriptor
+         {
+             Subject = new ClaimsIdentity(new[]
+             {
+                 new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                 new Claim(ClaimTypes.Name, user.Username),
+                 new Claim(ClaimTypes.Role, user.Role.RoleName)
+             }),
+             Expires = DateTime.UtcNow.AddHours(1),
+             SigningCredentials = new SigningCredentials(
+                 new SymmetricSecurityKey(key),
+                 SecurityAlgorithms.HmacSha256Signature)
+         };
+
+         var token = tokenHandler.CreateToken(tokenDescriptor);
+         return tokenHandler.WriteToken(token);
     }
+    */
+   public async Task<string?> LoginAsync(LoginDto dto)
+{
+    if (string.IsNullOrWhiteSpace(dto.Username) || string.IsNullOrWhiteSpace(dto.Password))
+        return null;
+
+    var user = await _context.Users
+        .Include(u => u.Role)
+        .FirstOrDefaultAsync(u => u.Username == dto.Username);
+
+    if (user == null)
+        return null;
+
+    var hashedInput = HashPassword(dto.Password);
+    if (hashedInput != user.PasswordHash)
+        return null;
+
+    // ==============================================
+    // 🔥 FIX: Find doctor correctly (NO UserId needed)
+    // ==============================================
+    string loginUserName = user.Username.Trim();
+    string? doctorName = null;
+
+    if (user.Role.RoleName == "Doctor")
+    {
+        doctorName = await _context.Doctors
+            .Where(d =>
+                d.Email == loginUserName ||
+                d.DoctorName.Replace(" ", "").ToLower() ==
+                loginUserName.Replace(" ", "").ToLower()
+            )
+            .Select(d => d.DoctorName)
+            .FirstOrDefaultAsync();
+    }
+
+    var nameToUse = doctorName ?? user.Username;
+
+    var tokenHandler = new JwtSecurityTokenHandler();
+    var key = Encoding.ASCII.GetBytes(_authSettings.SecretKey);
+
+    var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+        new Claim(ClaimTypes.Role, user.Role.RoleName),
+        new Claim(ClaimTypes.Name, nameToUse)
+    };
+
+    var tokenDescriptor = new SecurityTokenDescriptor
+    {
+        Subject = new ClaimsIdentity(claims),
+        Expires = DateTime.UtcNow.AddHours(1),
+        SigningCredentials = new SigningCredentials(
+            new SymmetricSecurityKey(key),
+            SecurityAlgorithms.HmacSha256Signature)
+    };
+
+    var token = tokenHandler.CreateToken(tokenDescriptor);
+    return tokenHandler.WriteToken(token);
+}
+
+
+
 }

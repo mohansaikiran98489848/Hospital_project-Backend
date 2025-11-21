@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Security.Claims;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -40,6 +41,9 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IReceptionService, ReceptionService>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();
+builder.Services.AddScoped<IVisitService, VisitService>();
+
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["AuthSettings:SecretKey"]);
 builder.Services.AddAuthentication(options =>
@@ -55,9 +59,14 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ValidateIssuer = false,
         ValidateAudience = false,
-        ValidateLifetime = true
+        ValidateLifetime = true,
+
+        // IMPORTANT: map token claims to these identity properties
+        NameClaimType = ClaimTypes.Name,   // maps ClaimsPrincipal.Identity.Name
+        RoleClaimType = ClaimTypes.Role    // maps role checks [Authorize(Roles="...")]
     };
 });
+
 
 builder.Services.AddAuthorization();
 
